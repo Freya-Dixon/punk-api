@@ -2,11 +2,13 @@
 .navList {
   margin: 0 auto;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-decoration: none;
   background-color: #2C2624;
+  text-align: center;
 }
 
 .navItem {
@@ -22,8 +24,7 @@
   justify-content: center;
   color: white;
   list-style: none;
-  margin-left: 20vw;
-  font-size: 4.2em;
+  font-size: 3em;
   margin: 0 auto;
   width: 25vw;
   text-transform: uppercase;

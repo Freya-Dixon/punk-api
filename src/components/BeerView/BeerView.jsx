@@ -10,7 +10,7 @@ const BeerView = () => {
             <section className={styles.beerSection}>
                 <h1 className={styles.beerHeading}>Our Beers</h1>
             <FilterSystem />
-            <BeerCard />
+       
         </section>
         </>
     )

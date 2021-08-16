@@ -1,0 +1,109 @@
+* {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+  
+}
+.filterWrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    height: 85vh;
+    background-color: #AAAAAA;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 50px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.subheading {
+    width: 20vw;
+    height: 10vh;
+    font-size: 3.5em;
+    background-color: #AAAAAA;
+    margin: 0 auto;
+    margin-top: 3vh;
+    padding: 2vh;
+    color: #46505C;
+    
+}
+.inputTextWrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 24vw;
+    height: 14vh;
+    margin-bottom: 2vh;
+    background-color: #AAAAAA;
+}
+.inputForm {
+    margin: 0 auto;
+    width: 20vw;
+    height: 14vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    background-color: #AAAAAA;
+
+}
+.inputText {
+    margin: 0;
+    margin-top: 2vh;
+    width: 15vw;
+    height: 2vh;
+    padding: 1vh;
+    font-size: 1.3em;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+ 
+}
+.checkboxesWrapper {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    width: 20vw;
+    margin-bottom: 5vh;
+    background: transparent;
+}
+.inputboxWrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 23vw;
+    height: 10vh;
+    background-color: transparent;
+}
+.checkbox {
+    margin: 0 auto;
+    height: 3vh;
+    width: 2vw;
+    border: transparent;
+    outline: none;
+    background-color: white;
+}
+
+.label {
+    font-size: 1.4em;
+    padding: 1vh;
+    background: transparent;
+}
+.rangesWrapper {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 6vh;
+    background-color: transparent;
+}
+.range {
+    width: 15vw;
+}
