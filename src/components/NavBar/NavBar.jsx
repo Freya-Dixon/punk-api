@@ -6,6 +6,7 @@ const NavBar = () => {
         <div>
             <ul className={styles.navList}>
             <Link to='/home' className={styles.navItem}>Home</Link>
+            <li className={styles.heading}>Punk and Co.</li>
                   <Link to='/beers' className={styles.navItem}>Our Beers</Link>
             </ul>
         </div>
