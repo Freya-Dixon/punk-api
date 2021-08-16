@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <Router>
       <Switch>
-      <Route excat path='/'>
+      <Route excat path='/home'>
       <NavBar/>
       <HomePage/>
       </Route>
@@ -21,15 +21,6 @@ const App = () => {
       <BeerView/>
       </Route>
       </Router>
-      {/* <Router>
-            <HomeNav />
-             <Switch>
-             <Route path='/home'>
-            <HomePage />
-            </Route>
-            </Switch>
-            </Router>
-            < NavBar handlechange={handlechange} />  */}
     </div>
   )
 }
