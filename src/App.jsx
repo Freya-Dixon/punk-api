@@ -9,20 +9,23 @@ import NavBar from './components/NavBar'
 import BeerView from './components/BeerView'
 const App = () => {
   return (
-    <div>
+    <>
       <Router>
       <Switch>
-      <Route excat path='/home'>
+      <Route exact path="/">
       <NavBar/>
       <HomePage/>
       </Route>
-      </Switch>
-      <Route path='/beers'>
-      <BeerView/>
+      <Route path="/beers">
+      <BeerView />
       </Route>
+      </Switch>
       </Router>
-    </div>
+    </>
   )
 }
+
+
+
 
 export default App

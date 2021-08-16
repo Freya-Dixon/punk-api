@@ -2,14 +2,17 @@ import React from 'react'
 import BeerCard from './BeerCard'
 import FilterSystem from './FilterSystem'
 import NavBar from '../NavBar'
+import styles from './BeerView.module.scss'
 const BeerView = () => {
     return (
-        <div>
+        <>
             <NavBar />
+            <section className={styles.beerSection}>
+                <h1 className={styles.beerHeading}>Our Beers</h1>
             <FilterSystem />
-            <h1>Our Beers</h1>
             <BeerCard />
-        </div>
+        </section>
+        </>
     )
 }
 

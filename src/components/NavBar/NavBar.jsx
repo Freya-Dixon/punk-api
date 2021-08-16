@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import styles from './NavBar.module.scss'
 const NavBar = () => {
     return (
         <div>
             <ul className={styles.navList}>
-            <Link to='/home' className={styles.navItem}>Home</Link>
+            <NavLink to="/" className={styles.navItem}>Home</NavLink>
             <li className={styles.heading}>Punk and Co.</li>
-                  <Link to='/beers' className={styles.navItem}>Our Beers</Link>
+                  <NavLink to="/beers" className={styles.navItem}>Our Beers</NavLink>
             </ul>
         </div>
     )
