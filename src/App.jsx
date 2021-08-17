@@ -42,7 +42,7 @@ const App = () => {
       <HomePage/>
       </Route>
       <Route path="/beers">
-      <BeerView />
+      { beers && < BeerView beers={beers} filterBySearch={filterBySearch} />}
       </Route>
       </Switch>
       </Router>

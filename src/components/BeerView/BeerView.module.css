@@ -13,3 +13,8 @@
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
 }
+
+.cardContainer {
+  margin: 0 auto;
+  width: 50vw;
+}
