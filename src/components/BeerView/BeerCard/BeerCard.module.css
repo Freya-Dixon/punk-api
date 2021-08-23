@@ -1,0 +1,48 @@
+.beerCard {
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 2vw;
+  padding: 2vh;
+  width: 30vw;
+  height: 60vh;
+  border: none;
+  background-color: grey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border-radius: 10px;
+}
+.beerCard .image {
+  margin: 0 auto;
+  padding: 0px;
+  width: 5vw;
+  height: 40vh;
+  align-self: center;
+  background-color: transparent;
+}
+.beerCard .heading {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.beerCard .subheading {
+  margin: 0 auto;
+  margin-top: 3vh;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.beerCard .textWrapper {
+  width: 20vw;
+  height: 20vh;
+  font-size: 1em;
+  color: #808080;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
