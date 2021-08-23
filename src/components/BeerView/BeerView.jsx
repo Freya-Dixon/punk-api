@@ -1,6 +1,5 @@
 import React from 'react'
 import BeerCard from './BeerCard'
-import FilterSystem from './FilterSystem'
 import NavBar from '../NavBar'
 import styles from './BeerView.module.scss'
 const BeerView = (props) => {
@@ -10,13 +9,9 @@ const BeerView = (props) => {
     return (
         <>
             <NavBar />
-            <section className={styles.beerSection}>
-            <FilterSystem />
             <div className={styles.cardContainer}>
              {CardJSX}
         </div>
-            
-        </section>
         </>
     )
 }

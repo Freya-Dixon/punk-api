@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  width: 60vw;
 }
 
 .beerHeading {
@@ -15,10 +16,11 @@
 }
 
 .cardContainer {
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 3vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 60vw;
-  height: 80vh;
+  width: 45vw;
+  height: 10vh;
 }

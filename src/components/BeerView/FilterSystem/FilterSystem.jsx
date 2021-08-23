@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './FilterSystem.module.scss'
-const FilterSystem = () => {
+const FilterSystem = (props) => {
     return (
         <div className={styles.filterWrapper}>
             <h2 className={styles.subheading}>Filter Beers</h2>
@@ -8,7 +8,7 @@ const FilterSystem = () => {
             <div className={styles.inputTextWrapper}>
             <form action="" className={styles.inputForm}>
             <label htmlFor="" className={styles.label}>Search by name.</label>
-            <input type="text" placeholder="Beer Name" className={styles.inputText}/>
+            <input type="text" placeholder="Beer Name" className={styles.inputText} onChange={props.handlechange} filterBySearch = {props.filterBySearch}/>
             </form>
             </div>
 

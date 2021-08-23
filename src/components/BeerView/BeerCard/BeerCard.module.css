@@ -1,24 +1,24 @@
 .beerCard {
   margin: 0 auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
   margin-left: 2vw;
   padding: 2vh;
-  width: 30vw;
+  width: 20vw;
   height: 60vh;
   border: none;
-  background-color: grey;
+  background-color: #42454A;
   color: white;
   display: flex;
   flex-direction: column;
   outline: none;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .beerCard .image {
   margin: 0 auto;
   padding: 0px;
-  width: 5vw;
-  height: 40vh;
+  width: 4.5vw;
+  height: 25vh;
   align-self: center;
   background-color: transparent;
 }

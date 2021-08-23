@@ -4,19 +4,17 @@
   
 }
 .filterWrapper {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 24vw;
-    height: 85vh;
+    height: 90vh;
     background-color: #AAAAAA;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 50px;
     border: none;
     border-radius: 20px;
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 .subheading {
     width: 20vw;
