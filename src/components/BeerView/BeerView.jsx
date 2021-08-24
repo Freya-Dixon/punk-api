@@ -3,9 +3,18 @@ import BeerCard from './BeerCard'
 import NavBar from '../NavBar'
 import styles from './BeerView.module.scss'
 const BeerView = (props) => {
-    const CardJSX = props.beers.map((item) => {
-        return <BeerCard beer={item}/>;
-      })
+    let CardJSX = [""];
+
+    if (props.inputValue) {
+       CardJSX = props.searchBeers.map((item) => {
+            return < BeerCard beer={item} />
+          })
+        }
+          else {
+            CardJSX = props.beers.map((itemTwo) => {
+                return <BeerCard beer={itemTwo} />        
+            })
+        }
     return (
         <>
             <NavBar />
@@ -14,6 +23,6 @@ const BeerView = (props) => {
         </div>
         </>
     )
-}
+    }
 
 export default BeerView

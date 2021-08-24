@@ -8,7 +8,7 @@ const FilterSystem = (props) => {
             <div className={styles.inputTextWrapper}>
             <form action="" className={styles.inputForm}>
             <label htmlFor="" className={styles.label}>Search by name.</label>
-            <input type="text" placeholder="Beer Name" className={styles.inputText} onChange={props.handlechange} filterBySearch = {props.filterBySearch}/>
+            <input type="text" placeholder="Beer Name" className={styles.inputText}  searchBeers={props.searchBeers} filterBySearch ={props.filterBySearch} onChange={props.handlechange} />
             </form>
             </div>
 

@@ -12,28 +12,20 @@ const App = () => {
 
   const [beers, setBeers] = useState([])
   const [searchBeers, searchsetBeers] = useState([])
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState("")
  
 
-  // display all beers on the page
+
   useEffect(() => {
     fetch('https://api.punkapi.com/v2/beers')
     .then(res => res.json())
     .then(data => { 
       setBeers(data) 
+      searchsetBeers(data)
     console.log(data); 
     })
-  }, []);
+  }, [beers]);
 
-
-  useEffect(() => {
-    fetch(`https://api.punkapi.com/v2/beers?beer_name=${inputValue}`)
-    .then(res => res.json())
-    .then(data => { 
-      searchsetBeers(data) 
-    console.log(data); 
-    })
-  }, []);
 
   const handlechange = (e) => {
     setInputValue(e.target.value)
@@ -54,8 +46,8 @@ const App = () => {
       <HomePage/>
       </Route>
       <Route path="/beers">
-      { beers && < BeerView beers={beers}  />}
-      { searchBeers && < FilterSystem searchBeers={searchBeers} handlechange={handlechange} filterBySearch ={filterBySearch}/>}
+      {  beers && < BeerView  beers={beers} inputValue={inputValue} searchBeers={searchBeers} /> }
+       < FilterSystem handlechange={handlechange} filterBySearch ={filterBySearch} searchBeers={searchBeers} />
       </Route>
       </Switch>
       </Router>
