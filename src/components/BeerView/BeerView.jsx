@@ -5,21 +5,25 @@ import styles from './BeerView.module.scss'
 const BeerView = (props) => {
     let CardJSX = [""];
 
-    if (props.inputValue) {
-       CardJSX = props.searchBeers.map((item) => {
-            return < BeerCard beer={item} />
-          })
-        }
-          else {
-            CardJSX = props.beers.map((itemTwo) => {
-                return <BeerCard beer={itemTwo} />        
-            })
-        }
+    // if (props.inputValue.length > 0) {
+    //    CardJSX = props.beers.map((item) => {
+    //         return < BeerCard beer={item} />
+    //       })
+    //     }
+    //       else {
+    //         CardJSX = props.beers.map((item) => {
+    //             return <BeerCard beer={item} />        
+    //         })
+    //     }
     return (
         <>
             <NavBar />
             <div className={styles.cardContainer}>
-             {CardJSX}
+             {/* {CardJSX} */}
+            
+             {props.searchBeers && props.searchBeers.map((item) => {
+                return <BeerCard beer={item} />        
+            })}
         </div>
         </>
     )

@@ -22,9 +22,8 @@ const App = () => {
     .then(data => { 
       setBeers(data) 
       searchsetBeers(data)
-    console.log(data); 
     })
-  }, [beers]);
+  }, []);
 
 
   const handlechange = (e) => {
@@ -32,11 +31,17 @@ const App = () => {
   }
   // filter data with key of name to new input value
   const filterBySearch = () => {
-    searchBeers.filter(searchsetBeers => {
-      return searchBeers.name.toLowerCase().includes(inputValue.toLowerCase())
+    const filteredBeers = beers.filter(searchBeer => {
+    return searchBeer.name.toLowerCase().includes(inputValue.toLowerCase())
     })
+    searchsetBeers(filteredBeers)
   }
   
+  useEffect(() => {
+  filterBySearch()
+  },[inputValue])
+
+
   return (
     <>
       <Router>
@@ -47,7 +52,7 @@ const App = () => {
       </Route>
       <Route path="/beers">
       {  beers && < BeerView  beers={beers} inputValue={inputValue} searchBeers={searchBeers} /> }
-       < FilterSystem handlechange={handlechange} filterBySearch ={filterBySearch} searchBeers={searchBeers} />
+       < FilterSystem handlechange={handlechange} filterBySearch ={filterBySearch} />
       </Route>
       </Switch>
       </Router>
