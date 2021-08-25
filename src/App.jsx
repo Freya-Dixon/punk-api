@@ -36,6 +36,13 @@ const App = () => {
     })
     searchsetBeers(filteredBeers)
   }
+
+  const filterByType = () => {
+    const filteredType = beers.filter(searchBeer => {
+    return searchBeer.beer.ph;
+    })
+    searchsetBeers(filteredType)
+  }
   
   useEffect(() => {
   filterBySearch()
