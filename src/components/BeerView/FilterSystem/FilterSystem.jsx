@@ -15,10 +15,10 @@ const FilterSystem = (props) => {
 
             <div className={styles.checkboxesWrapper}>
             <div className={styles.inputboxWrapper}>
-            <button className={styles.filterButton}>Keg Only</button>
+            <button className={styles.filterButton} onClick={props.filterByType}>Keg Only</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <button className={styles.filterButton} onClick={props.searchBeers[0]}>Classic Range</button>
+            <button className={styles.filterButton}>Classic Range</button>
             </div>
             <div className={styles.inputboxWrapper}>
             <button className={styles.filterButton}>High ABV</button>

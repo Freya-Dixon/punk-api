@@ -39,7 +39,7 @@ console.log(searchBeers[0]);
 
   const filterByType = () => {
     const filteredType = searchBeers.filter(searchBeers => {
-    return searchBeers[0];
+    return searchBeers.name.includes("Misspent Youth") || searchBeers.name.includes("Buzz") || searchBeers.name.includes("Vice Bier") || searchBeers.name.includes("Rabiator");
     })
     searchsetBeers(filteredType)
   }
