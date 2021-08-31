@@ -79,13 +79,12 @@
     height: 10vh;
     background-color: transparent;
 }
-.checkbox {
-    margin: 0 auto;
-    height: 3vh;
-    width: 2vw;
-    border: transparent;
-    outline: none;
-    background-color: white;
+.filterButton {
+    width: 15vw;
+    height: 8vh;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5em;
 }
 
 .label {

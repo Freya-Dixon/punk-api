@@ -15,16 +15,13 @@ const FilterSystem = (props) => {
 
             <div className={styles.checkboxesWrapper}>
             <div className={styles.inputboxWrapper}>
-            <label htmlFor="" className={styles.label}>Keg Only</label>
-            <input type="checkbox" className={styles.checkbox}/>
+            <button className={styles.filterButton}>Keg Only</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <label htmlFor="" className={styles.label}>Classics </label>
-            <input type="checkbox" className={styles.checkbox}/>
+            <button className={styles.filterButton}>Classic Range</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <label htmlFor="" className={styles.label}>High ABV</label>
-            <input type="checkbox" className={styles.checkbox}/>
+            <button className={styles.filterButton}>High ABV</button>
             </div>
             </div>
 
