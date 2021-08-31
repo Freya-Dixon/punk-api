@@ -18,7 +18,7 @@ const FilterSystem = (props) => {
             <button className={styles.filterButton}>Keg Only</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <button className={styles.filterButton}>Classic Range</button>
+            <button className={styles.filterButton} onClick={props.searchBeers[0]}>Classic Range</button>
             </div>
             <div className={styles.inputboxWrapper}>
             <button className={styles.filterButton}>High ABV</button>
