@@ -21,7 +21,7 @@ const FilterSystem = (props) => {
             <button className={styles.filterButton}>Classic Range</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <button className={styles.filterButton}>High ABV</button>
+            <button className={styles.filterButton} onClick={props.filterByABV}>High ABV</button>
             </div>
             </div>
 
