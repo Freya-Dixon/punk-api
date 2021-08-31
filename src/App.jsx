@@ -39,16 +39,22 @@ console.log(searchBeers[0]);
 
   const filterByType = () => {
     const filteredType = searchBeers.filter(searchBeers => {
-    return searchBeers.name.includes("Misspent Youth") || searchBeers.name.includes("Buzz") || searchBeers.name.includes("Vice Bier") || searchBeers.name.includes("Rabiator");
+    return searchBeers.name.includes("Misspent Youth") || searchBeers.name.includes("Buzz") || searchBeers.name.includes("Vice Bier") || searchBeers.name.includes("Rabiator") || searchBeers.name.includes("Berliner Weisse With Yuzu - B-Sides");
     })
     searchsetBeers(filteredType)
   }
 
   const filterByABV = () => {
     const filteredAbv = searchBeers.filter(searchBeers => {
-    return searchBeers.id < 6;
+    return searchBeers.abv < 6;
     })
     searchsetBeers(filteredAbv)
+  }
+  const filterByPh = () => {
+    const filteredPh = searchBeers.filter(searchBeers => {
+    return searchBeers.ph < 4;
+    })
+    searchsetBeers(filteredPh)
   }
   useEffect(() => {
   filterBySearch()
@@ -65,7 +71,7 @@ console.log(searchBeers[0]);
       </Route>
       <Route path="/beers">
       {  beers && < BeerView  beers={beers} inputValue={inputValue} searchBeers={searchBeers} /> }
-       < FilterSystem handlechange={handlechange} filterByABV={filterByABV} searchBeers={searchBeers} filterBySearch ={filterBySearch} filterByType={filterByType} />
+       < FilterSystem handlechange={handlechange} filterByPh={filterByPh} filterByABV={filterByABV} searchBeers={searchBeers} filterBySearch ={filterBySearch} filterByType={filterByType} />
       </Route>
       </Switch>
       </Router>

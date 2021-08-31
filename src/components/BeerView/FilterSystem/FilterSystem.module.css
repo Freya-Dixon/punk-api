@@ -89,6 +89,11 @@
   border: none;
   border-radius: 20px;
   font-size: 1.5em;
+  background-color: grey;
+}
+.filterButton:hover {
+  transition: 0.3s ease;
+  border: 2px solid black;
 }
 
 .label {

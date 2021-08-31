@@ -11,23 +11,16 @@ const FilterSystem = (props) => {
             <input type="text" placeholder="Beer Name" className={styles.inputText}  searchBeers={props.searchBeers} filterBySearch ={props.filterBySearch} onChange={props.handlechange} />
             </form>
             </div>
-
-
             <div className={styles.checkboxesWrapper}>
             <div className={styles.inputboxWrapper}>
             <button className={styles.filterButton} onClick={props.filterByType}>Keg Only</button>
             </div>
             <div className={styles.inputboxWrapper}>
-            <button className={styles.filterButton}>Classic Range</button>
-            </div>
-            <div className={styles.inputboxWrapper}>
             <button className={styles.filterButton} onClick={props.filterByABV}>High ABV</button>
             </div>
+            <div className={styles.inputboxWrapper}>
+            <button className={styles.filterButton} onClick={props.filterByPh}>Acidic</button>
             </div>
-
-            <div className={styles.rangesWrapper}>
-            <label htmlFor="" className={styles.label}>ABV %</label>
-            <input type="range" className={styles.range}/>
             </div>
         </div>
     )
