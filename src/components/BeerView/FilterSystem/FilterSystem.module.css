@@ -84,16 +84,20 @@
 }
 
 .filterButton {
-  width: 15vw;
+  width: 20vw;
   height: 8vh;
   border: none;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
   border-radius: 20px;
   font-size: 1.5em;
   background-color: grey;
 }
 .filterButton:hover {
-  transition: 0.3s ease;
-  border: 2px solid black;
+  transition: ease 0.4s;
+  border: 2px solid grey;
+  background-color: whitesmoke;
+  color: darkgray;
 }
 
 .label {

@@ -4,9 +4,9 @@ const HomePage = () => {
     return (
         <>
        
-        <div className={styles.homeLanding}>
+        <div className={styles.block}>
         <div className= {styles.headingWrapper}>
-          <h1 className={styles.heading}> DISCOVER THE TASTE OF REBELLION</h1>
+          <h1 className={styles.home__title}> DISCOVER THE TASTE OF REBELLION</h1>
           </div>
         </div>
         </>
