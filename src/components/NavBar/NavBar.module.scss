@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.navList {
+.nav {
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -11,7 +11,7 @@
     background-color: #2C2624;
     text-align: center;
 }
-.navItem {
+.nav__item {
     margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
@@ -19,7 +19,7 @@
     color: #bebcbc;
     font-family: 'Bebas Neue', cursive;
 }
-.heading {
+.nav__title {
     
     justify-content: center;
     color: white;

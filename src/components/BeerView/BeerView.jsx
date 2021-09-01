@@ -3,7 +3,6 @@ import BeerCard from './BeerCard'
 import NavBar from '../NavBar'
 import styles from './BeerView.module.scss'
 const BeerView = (props) => {
-    let CardJSX = [""];
 
     return (
         <>

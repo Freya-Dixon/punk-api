@@ -4,8 +4,8 @@ const HomePage = () => {
     return (
         <>
        
-        <div className={styles.block}>
-        <div className= {styles.headingWrapper}>
+        <div className={styles.home}>
+        <div className= {styles.title__Wrapper}>
           <h1 className={styles.home__title}> DISCOVER THE TASTE OF REBELLION</h1>
           </div>
         </div>

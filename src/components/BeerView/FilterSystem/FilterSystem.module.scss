@@ -3,7 +3,7 @@
     font-family: 'Bebas Neue', cursive;
   
 }
-.filterWrapper {
+.filterSystem {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     margin-left: 3vw;
     margin-right: 3vw;
 }
-.subheading {
+.subtitle {
     width: 20vw;
     height: 10vh;
     font-size: 3.5em;
@@ -35,7 +35,7 @@
     margin-bottom: 2vh;
     background-color: #AAAAAA;
 }
-.inputForm {
+.form {
     margin: 0 auto;
     width: 20vw;
     height: 14vh;
@@ -46,7 +46,7 @@
     background-color: #AAAAAA;
 
 }
-.inputText {
+.form__input {
     margin: 0;
     margin-top: 2vh;
     width: 15vw;
@@ -59,7 +59,7 @@
     border-bottom: 3px solid black;
  
 }
-.checkboxesWrapper {
+.btn__container {
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -70,7 +70,7 @@
     margin-bottom: 5vh;
     background: transparent;
 }
-.inputboxWrapper {
+.form__btn__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@
     height: 10vh;
     background-color: transparent;
 }
-.filterButton {
+.filterSystem__btn {
     width: 20vw;
     height: 8vh;
     border: none;
@@ -99,16 +99,4 @@
     font-size: 1.4em;
     padding: 1vh;
     background: transparent;
-}
-.rangesWrapper {
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    height: 6vh;
-    background-color: transparent;
-}
-.range {
-    width: 15vw;
 }

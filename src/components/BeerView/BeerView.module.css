@@ -1,20 +1,3 @@
-.beerSection {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  width: 60vw;
-}
-
-.beerHeading {
-  text-align: center;
-  margin-top: 7vh;
-  color: white;
-  font-size: 5em;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
-}
-
 .cardContainer {
   margin: 0 auto;
   margin-top: 3vh;
